@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <title>HomePage</title>
+    
+    <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
 
-<title>HomePage</title>
-<link rel="stylesheet" href="css/Homepage.css"  type="text/css">
 </head>
 <body>
-	<header id="banner">
-		<div>
-			<div style="float: left;">
-				<img src="images/logo4.png" height="100px" width="100%" />
+    <header id="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">E-Learning App</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active"
+                                aria-current="page" href="signup.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link active"
+                                    aria-current="page" href="login.html">Login</a></li>
+                        
+					</ul>
+				</div>
 			</div>
-			<div>
-				<h1 style="padding-top: 40px;">Welcome To E-Learning App</h1>
-			</div>
-		</div>
-	</header>
-
-	<div class="row">
-		<div class="column left" style="background-color: white;">
-			<h3>New User?</h3>
-			<p>Click here to Register</p>
-			<a href="register.html">Register</a>
-		</div>
-		<div class="column middle" style="background-color: white;">
-			<h3>Registered User?</h3>
-			<p>Click here to Login</p>
-			<a href="login.html">Login</a>
-		</div>
-		<div class="column right">
-			<img src="images/homepageimg1.jpg" alt="Learn To Become Professional"
-				height="390px" width="100%">
-		</div>
-	</div>
-	<footer id="aboutUs">
-		<p>About us</p>
-	</footer>
+		</nav>
+    </header>
+    <h1 style="font-family: 'Times New Roman', Times, serif;">Welcome To E-Learning App !!!</h1>
+    <div class="row">
+        <div class="column left">
+          <h3>New User?</h3>
+          <p>Create Account to explore the variety of courses and unlock your true potentials...</p>
+          <p>Click here to Register</p>
+          <a href="signup.html" id="link">Register</a>
+        </div>
+        <div class="column middle">
+          <h3>Registered User?</h3>
+          <p>Already Exisiting User? Login here to continue from where you left...</p>
+          <p>Click here to Login</p>
+          <a href="login.html" id="link">Login</a>
+        </div>
+        <div class="column right">
+            <img src="assets/homepageimg1.jpg" alt="Learn To Become Professional" height="440px" width="100%">
+        </div>
+      </div>
+      <footer id="aboutUs">
+          <p>For Any Queries-- Contact us</p>
+          <p>Email - <a href="mailto:gopinathd3737@gmail.com">gopinathd3737@gmail.com</a></p>
+      </footer>   
 </body>
 </html>
