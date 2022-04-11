@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <script type="text/javascript" src="js/signup.js"></script>
+    <style>
+        h1{
+            color:red;
+            
+        }
+        div{
+       		padding :10px; 
+        }
+        .registration{
+            color: blue;
+            padding: 40px 50px 80px 50px;
+            background-color: yellow;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 style="text-align: center;">Register Here</h1>
+    <form style="text-align: center;" onsubmit="register()" class="registration">
+        <div >
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required autofocus  autocomplete="name"/>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Enter Phone Number" required/>
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" placeholder="Enter your Email Id" required/>
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" name="passs" id="pass" placeholder="Enter 8-16 characters" required/>
+        </div>
+        <div id="message">
+        	
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+</html>
